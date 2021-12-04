@@ -19,8 +19,9 @@ try:
             angle = 0
             
         pyautogui.moveTo(coordinates_x + Circle_radius* math.cos(angle/180*3.1415926),
-                         coordinates_y + Circle_radius *math.sin(angle/180*3.1415926),
-                         duration = 0.001)
+                         coordinates_y + Circle_radius *math.sin(angle/180*3.1415926))
+        pyautogui.PAUSE = 0
+        
         angle += 1
 
         x ,y = pyautogui.position()
